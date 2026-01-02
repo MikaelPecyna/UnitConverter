@@ -48,11 +48,12 @@ char Lexer::consume() {
             continue;
         }
 
-        // Mot (keyword ou unit)
+        // Mot (keyword ou unit) - peut contenir des lettres et '/'
         if (std::isalpha(current)) {
             acc = "";
 
-            while (std::isalpha(pick())) {
+            // Accumuler lettres et éventuellement '/' pour les unités composées
+            while (std::isalpha(pick()) || pick() == '/') {
                 acc += consume();
             }
 
