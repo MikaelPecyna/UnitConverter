@@ -1,0 +1,44 @@
+# Build directories
+build/
+.build/
+out/
+
+# Cache directory
+.cache/
+
+#config files
+.clang-format
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+*.dll
+*.lib
+*.def
+*.pdb
+
+# Generated files
+*.d
+*.o.d
+meson-logs/
+meson-info/
+meson-private/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# CMake (if used)
+CMakeLists.txt.user
